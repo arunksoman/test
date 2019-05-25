@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>PCPL</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="static/css/w3.css">
+<link rel="stylesheet" href="static/css/main.css">
+<link rel="stylesheet" href="<link href="https://fonts.googleapis.com/css?family=Merriweather|Merriweather+Sans&display=swap" rel="stylesheet">">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+<script src="static/js/jssor.slider-27.5.0.min.js"></script>
+<script src="static/js/image-animation.js"></script>
+</head>
+<body>
+
+  <!-- Navbar (sit on top) -->
+  <div class="w3-top" style="z-index:3">
+    <div class="w3-bar w3-white w3-card" id="myNavbar">
+      <a href="/" class="w3-bar-item w3-wide w3-hide-medium w3-hide-small"><img src="assets/img/logo.png" alt="logo" width="160" height="80" /></a>
+      <a href="/" class="w3-bar-item w3-wide w3-hide-small w3-padding-16 w3-hide-large"><img src="assets/img/logo.png" alt="logo" width="120" height="55" /></a>
+      <a href="/" class="w3-bar-item w3-wide w3-hide-medium w3-padding-16 w3-hide-large"><img src="assets/img/logo.png" alt="logo" width="90" height="50" /></a>
+      <!-- Right-sided navbar links -->
+      <div class="w3-right w3-hide-small">
+        <a href="#about" class="w3-bar-item w3-button w3-padding-32">ABOUT</a>
+        <a href="#team" class="w3-bar-item w3-button w3-padding-32"><i class="fas fa-user"></i> TEAM</a>
+        <a href="#work" class="w3-bar-item w3-button w3-padding-32"><i class="fas fa-th"></i> WORK</a>
+        <a href="#pricing" class="w3-bar-item w3-button w3-padding-32"><i class="fas fa-usd"></i> PRICING</a>
+        <a href="#contact" class="w3-bar-item w3-button w3-padding-32"><i class="fas fa-envelope"></i> CONTACT</a>
+      </div>
+      <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium w3-padding-32" onclick="w3_open()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </div>
+
+  <!-- Sidebar on small screens when clicking the menu icon -->
+  <nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-right w3-hide-medium w3-hide-large" style="display:none; z-index:3;right:0;top:0;" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fas fa-times"></i></a>
+    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+    <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
+    <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">WORK</a>
+    <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">PRICING</a>
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+  </nav>
+    <div class="splash-container">
+      <div class="splash">
+
+<!-- This part of script is under test -->
+
+
+<div id="jssor_1" class="splash-jssor_1">
+    <!-- Loading Screen -->
+    <div data-u="loading" class="jssorl-009-spin splash-loading">
+        <img class="splash-spinner"src="assets/img/spin.svg" />
+    </div>
+    <div data-u="slides" style="cursor:default;position:absolute;top:0px;left:0px;z-index:4;width:980px;height:380px;">
+        <div>
+            <img data-u="image" src="assets/img/011.jpg" />
+        </div>
+        <div>
+            <img data-u="image" src="assets/img/012.jpg" />
+        </div>
+        <div>
+            <img data-u="image" src="assets/img/013.jpg" />
+        </div>
+        <div>
+            <img data-u="image" src="assets/img/014.jpg" />
+        </div>
+        <div>
+            <img data-u="image" src="assets/img/015.jpg" />
+        </div>
+        <div>
+            <img data-u="image" src="assets/img/016.jpg" />
+        </div>
+    </div>
+    <!-- Bullet Navigator -->
+    <div data-u="navigator" class="jssorb053" style="position:absolute;bottom:12px;right:12px;" data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
+        <div data-u="prototype" class="i" style="width:16px;height:16px;">
+            <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                <path class="b" d="M11400,13800H4600c-1320,0-2400-1080-2400-2400V4600c0-1320,1080-2400,2400-2400h6800 c1320,0,2400,1080,2400,2400v6800C13800,12720,12720,13800,11400,13800z"></path>
+            </svg>
+        </div>
+    </div>
+    <!-- Arrow Navigator -->
+    <div data-u="arrowleft" class="jssora093" style="width:50px;height:50px;top:0px;left:30px;" data-autocenter="2" data-scale="0.75" data-scale-left="0.75">
+        <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+            <circle class="c" cx="8000" cy="8000" r="5920"></circle>
+            <polyline class="a" points="7777.8,6080 5857.8,8000 7777.8,9920 "></polyline>
+            <line class="a" x1="10142.2" y1="8000" x2="5857.8" y2="8000"></line>
+        </svg>
+    </div>
+    <div data-u="arrowright" class="jssora093" style="width:50px;height:50px;top:0px;right:30px;" data-autocenter="2" data-scale="0.75" data-scale-right="0.75">
+        <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+            <circle class="c" cx="8000" cy="8000" r="5920"></circle>
+            <polyline class="a" points="8222.2,6080 10142.2,8000 8222.2,9920 "></polyline>
+            <line class="a" x1="5857.8" y1="8000" x2="10142.2" y2="8000"></line>
+        </svg>
+    </div>
+</div>
+
+
+
+
+        <!-- This part of script is under test -->
+      </div>
+      </div>
+  <div class="content-wrapper">
+  <div class="w3-row-padding w3-padding-64 w3-container">
+    <div class="content w3-content">
+      <div class="w3-twothird">
+        <article id="artLink">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lobortis mattis aliquam faucibus purus in massa. Ut diam quam nulla porttitor massa. Nulla porttitor massa id neque aliquam vestibulum morbi blandit cursus. Ornare lectus sit amet est placerat in. Sed libero enim sed faucibus turpis. Eros donec ac odio tempor orci dapibus ultrices in. Ac orci phasellus egestas tellus. Et molestie ac feugiat sed lectus vestibulum mattis. Eu feugiat pretium nibh ipsum. Tincidunt dui ut ornare lectus. Cras adipiscing enim eu turpis egestas. Leo integer malesuada nunc vel risus commodo viverra maecenas accumsan. Elit pellentesque habitant morbi tristique senectus et. Pharetra magna ac placerat vestibulum lectus mauris.
+
+Feugiat nibh sed pulvinar proin gravida. Faucibus a pellentesque sit amet. Sed adipiscing diam donec adipiscing. Lorem mollis aliquam ut porttitor. Venenatis a condimentum vitae sapien. At urna condimentum mattis pellentesque. Mi in nulla posuere sollicitudin aliquam ultrices. Tincidunt arcu non sodales neque. Amet dictum sit amet justo donec enim. In nulla posuere sollicitudin aliquam ultrices. Ac tortor vitae purus faucibus ornare suspendisse. Est pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus. Enim diam vulputate ut pharetra. Mattis molestie a iaculis at. Ac odio tempor orci dapibus ultrices in iaculis nunc. Placerat vestibulum lectus mauris ultrices eros in. Mattis nunc sed blandit libero volutpat. Luctus venenatis lectus magna fringilla urna porttitor rhoncus dolor. A cras semper auctor neque vitae tempus quam. Et malesuada fames ac turpis egestas integer eget aliquet.
+
+Turpis in eu mi bibendum. Turpis in eu mi bibendum neque egestas congue quisque. Velit ut tortor pretium viverra suspendisse potenti nullam ac tortor. Id neque aliquam vestibulum morbi blandit. Congue nisi vitae suscipit tellus mauris a diam. Fusce ut placerat orci nulla pellentesque dignissim enim sit amet. Viverra maecenas accumsan lacus vel facilisis volutpat. Condimentum id venenatis a condimentum vitae sapien pellentesque habitant. Iaculis at erat pellentesque adipiscing commodo. Vel fringilla est ullamcorper eget nulla facilisi etiam dignissim. Neque laoreet suspendisse interdum consectetur libero. Euismod in pellentesque massa placerat. Pretium nibh ipsum consequat nisl vel pretium. Duis tristique sollicitudin nibh sit amet commodo nulla facilisi nullam. In egestas erat imperdiet sed euismod. Felis bibendum ut tristique et egestas quis ipsum suspendisse ultrices.
+
+Tortor posuere ac ut consequat semper viverra nam libero. At consectetur lorem donec massa sapien. Volutpat maecenas volutpat blandit aliquam etiam. Purus in massa tempor nec. Massa vitae tortor condimentum lacinia quis vel eros donec ac. Lobortis scelerisque fermentum dui faucibus in. Est velit egestas dui id ornare arcu odio ut sem. Ultricies lacus sed turpis tincidunt. Egestas sed sed risus pretium quam vulputate dignissim suspendisse in. Tellus elementum sagittis vitae et leo duis ut. Convallis a cras semper auctor neque vitae tempus quam. Ullamcorper a lacus vestibulum sed arcu. Hendrerit dolor magna eget est lorem ipsum dolor. Non sodales neque sodales ut etiam sit amet. Ultrices neque ornare aenean euismod elementum. Habitasse platea dictumst vestibulum rhoncus est. Lacinia quis vel eros donec. Amet venenatis urna cursus eget nunc scelerisque viverra.
+
+Dignissim diam quis enim lobortis scelerisque. Vitae purus faucibus ornare suspendisse sed. Egestas congue quisque egestas diam in. Eget felis eget nunc lobortis mattis aliquam faucibus purus in. Integer vitae justo eget magna fermentum iaculis eu non. Elementum sagittis vitae et leo duis ut. Mattis vulputate enim nulla aliquet. Semper feugiat nibh sed pulvinar proin gravida hendrerit lectus. Molestie nunc non blandit massa enim nec dui. Sapien faucibus et molestie ac feugiat sed lectus vestibulum. Donec massa sapien faucibus et. Sem nulla pharetra diam sit amet nisl suscipit adipiscing bibendum. Tristique senectus et netus et. Interdum posuere lorem ipsum dolor sit amet consectetur. Libero id faucibus nisl tincidunt eget nullam non nisi est. Netus et malesuada fames ac turpis egestas. Tortor posuere ac ut consequat semper. Ac feugiat sed lectus vestibulum mattis. Eget duis at tellus at urna condimentum mattis. Commodo ullamcorper a lacus vestibulum sed.
+      </article>
+    </div>
+  </div>
+</div>
+</div>
+<script>jssor_1_slider_init();</script>
+<script src="static/js/main.js"></script>
+</body>
+</html>
